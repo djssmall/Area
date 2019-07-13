@@ -1,0 +1,8 @@
+com\xcy\area\service\AreaService.class
+com\xcy\area\utils\JedisClient.class
+com\xcy\area\service\impl\AreaServiceImpl.class
+com\xcy\area\dao\AreaDao.class
+com\xcy\area\controller\AreaController.class
+com\xcy\area\utils\JedisClientPool.class
+com\xcy\area\utils\JsonBean.class
+com\xcy\area\pojo\Area.class

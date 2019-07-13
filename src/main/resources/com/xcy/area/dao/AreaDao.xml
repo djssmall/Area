@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xcy.area.dao.AreaDao">
+    <select id="selectByLevel" resultType="com.xcy.area.pojo.Area">
+        select * from area where level = 1
+    </select>
+
+    <select id="selectCityById" parameterType="integer" resultType="area">
+        select * from area where parent_id = #{id} and level =2
+    </select>
+
+    <select id="selectCountryById" parameterType="integer" resultType="area">
+        select * from area where parent_id = #{id} and level =3
+    </select>
+</mapper>
