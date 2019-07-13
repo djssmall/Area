@@ -28,7 +28,7 @@
             });
             $("#province").change(function () {
                 //先获取选中省份的省份id
-                alert($(this).val());
+                //alert($(this).val());
                 var id = $(this).val();
                 //发送ajax请求，加载所有市份数据
                 $.get("city.do",{id:id},function (data) {
@@ -52,7 +52,7 @@
 
             $("#city").change(function () {
                 //先获取选中省份的省份id
-                alert($(this).val());
+                //alert($(this).val());
                 var id = $(this).val();
                 //发送ajax请求，加载所有市份数据
                 $.get("country.do",{id:id},function (data) {
